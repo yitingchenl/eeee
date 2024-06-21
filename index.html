@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <style>
+        #panorama1,
+        #panorama2,
+        #panorama3,
+        #panorama4,
+        #panorama5,
+        #panorama6 {
+            width: 600px;
+            height: 400px;
+        }
+    </style>
+    <title>宇宙環景介紹</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">在異世界翱翔之旅</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-5 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">成員</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">訊息公告</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">活動花絮</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">環景介紹</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="mt-5 p-5">
+
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div id="panorama1">
+                        <script>
+                            pannellum.viewer('panorama1', {
+                                "type": "equirectangular",
+                                "panorama": "./images/01.jpg",
+                                "autoLoad": true,
+                                "autoRotate": -2
+                            });
+                        </script>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div id="panorama2">
+                        <script>
+                            pannellum.viewer('panorama2', {
+                                "type": "equirectangular",
+                                "panorama": "./images/02.jpg",
+                                "autoLoad": true,
+                                "autoRotate": -2
+                            });
+                        </script>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div id="panorama3">
+                        <script>
+                            pannellum.viewer('panorama3', {
+                                "type": "equirectangular",
+                                "panorama": "./images/03.jpg",
+                                "autoLoad": true,
+                                "autoRotate": -2
+                            });
+                        </script>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div id="panorama4">
+                        <script>
+                            pannellum.viewer('panorama4', {
+                                "type": "equirectangular",
+                                "panorama": "./images/04.jpg",
+                                "autoLoad": true,
+                                "autoRotate": -2
+                            });
+                        </script>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div id="panorama5">
+                        <script>
+                            pannellum.viewer('panorama5', {
+                                "type": "equirectangular",
+                                "panorama": "./images/05.jpg",
+                                "autoLoad": true,
+                                "autoRotate": -2
+                            });
+                        </script>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div id="panorama6">
+                        <script>
+                            pannellum.viewer('panorama6', {
+                                "type": "equirectangular",
+                                "panorama": "./images/06.jpg",
+                                "autoLoad": true,
+                                "autoRotate": -2
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
